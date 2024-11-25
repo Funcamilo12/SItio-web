@@ -61,6 +61,7 @@ li a.active, li a:hover {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    min-width: 100vh;
 }
 
 .slider-wrapper{
@@ -130,23 +131,9 @@ li a.active, li a:hover {
     transition: 0.2s ease;
 }
 
-@media (max-width: 1800px) {
-    #body{
-        min-height: 100vh;
-        min-width: 100vw;
-        padding: 20px 0;
 
-    }
-    
-}
 @media (max-width: 768px) {
-    .slider-wrapper{
-        margin: 0 10px 40px;
-    }
 
-    .slider-wrapper .swiper-slide-button {
-        display: none;
-    }
 }
 
 @media (max-width: 952px) {
@@ -161,6 +148,13 @@ li a.active, li a:hover {
 }
 
 @media (max-width: 858px) {
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .swiper-slide-button {
+        display: none;
+    }
     .checkbtn {
         display: block;
     }

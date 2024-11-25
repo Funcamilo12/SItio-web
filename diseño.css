@@ -61,13 +61,17 @@ li a.active, li a:hover {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    max-width: 100vh;
+}
 
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
 }
 
 .card-list .card-item{
     color: rgb(0, 0, 0);
-    width: 400px;
+    user-select: none;
     padding: 35px;
     margin: 20px;
     display: flex;
@@ -111,10 +115,39 @@ li a.active, li a:hover {
     color: rgb(0, 0, 0);
 }
 
+.slider-wrapper .swiper-pagination-bullet{
+    background: #000;
+    height: 15px;
+    width: 15px;
+}
 
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+}
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+    transition: 0.2s ease;
+}
 
+@media (max-width: 1800px) {
+    #body{
+        min-height: 100vh;
+        min-width: 100vw;
+        padding: 20px 0;
 
+    }
+    
+}
+@media (max-width: 768px) {
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    }
 
+    .slider-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
 
 @media (max-width: 952px) {
     .enlace{
@@ -123,6 +156,7 @@ li a.active, li a:hover {
     nav ul li a{
         font-size: 16px;
     }
+   
 
 }
 

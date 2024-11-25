@@ -131,32 +131,32 @@ li a.active, li a:hover {
 
 .bold {
     display: flex;
-    flex-direction: column; /* Coloca los divs en una columna */
-    align-items: center; /* Centra los divs horizontalmente */
-    gap: 20px; /* Espacio entre los divs */
-    padding: 20px; /* Espacio alrededor del contenedor */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
     background: rgb(255,246,174) no-repeat center;
     background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center;
   
 }
 
 .parrafo {
-    width: 80%; /* Ancho del div, puedes ajustarlo según necesites */
-    max-width: 600px; /* Ancho máximo para que no se estire demasiado */
-    border: 1px solid #ccc; /* Borde para los divs */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 20px; /* Espacio interno */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+    width: 80%; 
+    max-width: 600px;
+    border: 1px solid #ccc; 
+    border-radius: 15px;
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .Historia, .Mision, .Vision {
-    font-size: 30px; /* Tamaño de fuente para los títulos */
-    margin: 0; /* Eliminar márgenes por defecto */
+    font-size: 30px; 
+    margin: 0;
 }
 
 .text-historia, .text-mision, .text-vision {
-    font-size: 20px; /* Tamaño de fuente para el texto */
-    margin-top: 10px; /* Espacio entre el título y el texto */
+    font-size: 20px;
+    margin-top: 10px; 
 }
 
 

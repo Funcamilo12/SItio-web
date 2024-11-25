@@ -54,7 +54,7 @@ li a.active, li a:hover {
 #check {
     display: none;
 }
-#body{
+.body{
     background: rgb(255,246,174) no-repeat center;
     background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center;
     display: flex;
@@ -84,8 +84,8 @@ li a.active, li a:hover {
 
 }
 .card-list .card-item .icon-img {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     margin-bottom: 40px;
     border: 3px solid #a8d4d2;
@@ -129,6 +129,37 @@ li a.active, li a:hover {
     transition: 0.2s ease;
 }
 
+.bold {
+    display: flex;
+    flex-direction: column; /* Coloca los divs en una columna */
+    align-items: center; /* Centra los divs horizontalmente */
+    gap: 20px; /* Espacio entre los divs */
+    padding: 20px; /* Espacio alrededor del contenedor */
+    background: rgb(255,246,174) no-repeat center;
+    background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center;
+  
+}
+
+.parrafo {
+    width: 80%; /* Ancho del div, puedes ajustarlo según necesites */
+    max-width: 600px; /* Ancho máximo para que no se estire demasiado */
+    border: 1px solid #ccc; /* Borde para los divs */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+}
+
+.Historia, .Mision, .Vision {
+    font-size: 30px; /* Tamaño de fuente para los títulos */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+.text-historia, .text-mision, .text-vision {
+    font-size: 20px; /* Tamaño de fuente para el texto */
+    margin-top: 10px; /* Espacio entre el título y el texto */
+}
+
+
 @media (max-width: 768px) {
     .slider-wrapper{
         margin: 0 10px 40px;
@@ -137,6 +168,7 @@ li a.active, li a:hover {
     .slider-wrapper .swiper-slide-button {
         display: none;
     }
+   
 }
 
 @media (max-width: 858px) {
@@ -179,11 +211,10 @@ li a.active, li a:hover {
         font-size: 16px;
     }
    
-
 }
 
 @media (max-width: 2000px) {
-    #body{
+    .body{
         min-height: 100vh;
         min-width: 80vw;
     }

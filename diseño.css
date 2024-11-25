@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 nav {
     background-color: #f5f5dc;
@@ -54,12 +55,64 @@ li a.active, li a:hover {
     display: none;
 }
 section {
-    background: rgb(255,246,174);
+    background: rgb(255,246,174) no-repeat center;
     background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%);
     height: calc(100vh - 100px);
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-list .card-item{
+    color: rgb(0, 0, 0);
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
 
 }
+.card-list .card-item .icon-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #a8d4d2;
+    padding: 4px;
+}
+.card-list .card-item .descripcion {
+    font-size: 1.15rem;
+    color: #030303;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+.card-list .card-item .message-button{
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: black;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #cf5b5b;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+.card-list .card-item .message-button:hover {
+    background: rgba(228, 126, 223, 0.2);
+    border: 1px solid #daff08;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
 @media (max-width: 952px) {
     .enlace{
         padding-left: 20px;
@@ -94,10 +147,11 @@ section {
     }
     li.a:hover li a.active {
         background: none;
-        color: red;
+        
     }
     #check:checked ~ ul {
         left: 0;
     }
 
 }
+

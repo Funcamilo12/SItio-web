@@ -131,7 +131,15 @@ li a.active, li a:hover {
     transition: 0.2s ease;
 }
 
+@media (max-width: 1800px) {
+    #body{
+        min-height: 100vh;
+        max-width: calc(100vh-100px);
+        padding: 20px 0;
 
+    }
+    
+}
 @media (max-width: 768px) {
     .slider-wrapper{
         margin: 0 10px 40px;

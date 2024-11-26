@@ -54,7 +54,7 @@ li a.active, li a:hover {
 #check {
     display: none;
 }
-.body{
+.section-index{
     background: rgb(255,246,174) no-repeat center;
     background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center;
     display: flex;
@@ -162,8 +162,52 @@ li a.active, li a:hover {
     height: 100%;
     width: 100%;
 }
+.body-productos {
+    height: 100vh;
+    width: 100%;
+}
+
+.secction-productos {
+    background: rgb(255,246,174) no-repeat center;
+    background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 101px);
+    min-width: 50vw;
+}
+.lista .prod a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.lista .prod {
+    list-style: none;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+.lista {
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+
+}
+.lista .prod a:hover {
+    background: #daff08;
+    padding: 15px;
+
+}
+.footer {  
+    position: absolute;
+    bottom: 5%;
 
 
+ }
 @media (max-width: 768px) {
     .slider-wrapper{
         margin: 0 10px 40px;
@@ -222,10 +266,6 @@ li a.active, li a:hover {
         min-height: 100vh;
         min-width: 80vw;
     }
-    .drop:hover .dropdown {
-        display: block;
-    }
-
 
 }
 

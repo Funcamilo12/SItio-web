@@ -222,6 +222,9 @@ li a.active, li a:hover {
         min-height: 100vh;
         min-width: 80vw;
     }
+    .drop:hover .dropdown {
+        display: block;
+    }
 
 
 }

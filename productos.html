@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="diseño.css">
+	<link rel="stylesheet" href="dropdown.css">
 	<script src="https://kit.fontawesome.com/20fdd0499d.js" crossorigin="anonymous"></script>
     <title>Productos</title>
 </head>
 <body>
-		<nav>
+	
+		<nav class="nav-dropdown">
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
 				<i class="fa-solid fa-bars"></i>
@@ -18,17 +20,19 @@
 			</a>
 			<ul>
 				<li><a class="active" href="index.html">Inicio</a></li>
-				<li><a href="#">Productos🠻</a></li>
-				<ul class="dropdown">
-						<li><a href="">Anillos</a></li>
-						<li><a href="">Aretes</a></li>
-						<li><a href="">Collares</a></li>
-						<li><a href="">Conjunto</a></li>
-						<li><a href="">Manillas</a></li>
-						<li><a href="">Llaveros</a></li>
-						<li><a href="">Pulseras</a></li>
-						<li><a href="">Tobilleras</a>
-				</ul>
+				<li class="drop">
+					<a href="#">Productos🠻</a>
+					<ul class="dropdown">
+						<li class="prod"><a href="">Anillos</a></li>
+						<li class="prod"><a href="">Aretes</a></li>
+						<li class="prod"><a href="">Collares</a></li>
+						<li class="prod"><a href="">Conjunto</a></li>
+						<li class="prod"><a href="">Manillas</a></li>
+						<li class="prod"><a href="">Llaveros</a></li>
+						<li class="prod"><a href="">Pulseras</a></li>
+						<li class="prod"><a href="">Tobilleras</a></li>
+					</ul>
+				</li>
 
 				<li><a href="oferta.html">Ofertas</a></li>
 				

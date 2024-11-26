@@ -158,7 +158,10 @@ li a.active, li a:hover {
     font-size: 20px;
     margin-top: 10px; 
 }
-
+.img-historia {
+    height: 100%;
+    width: 100%;
+}
 
 @media (max-width: 768px) {
     .slider-wrapper{

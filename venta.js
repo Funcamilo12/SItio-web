@@ -1,20 +1,16 @@
 const btnCart = document.querySelector('.container-cart-icon');
-const containerCartProducts = document.querySelector(
-    '.container-carts-products');
+const containerCartProducts = document.querySelector('.container-carts-products');
 
 btnCart.addEventListener('click', () => {
     containerCartProducts.classList.toggle('hidden-cart');
 });
 
 /* ========================= */
-const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
-
-// Lista de todos los contenedores de productos
 const productsList = document.querySelector('.container-items');
 
 // Variable de arreglos de Productos
-let allProducts = [];
+let allProducts = JSON.parse(localStorage.getItem('cart')) || []; // Cargar desde localStorage
 
 const valorTotal = document.querySelector('.total-pagar');
 const countProducts = document.querySelector('#contador-productos');
@@ -31,9 +27,7 @@ productsList.addEventListener('click', e => {
             price: product.querySelector('p').textContent,
         };
 
-        const exists = allProducts.some(
-            item => item.title === infoProduct.title
-        );
+        const exists = allProducts.some(item => item.title === infoProduct.title);
 
         if (exists) {
             const products = allProducts.map(item => {
@@ -49,6 +43,7 @@ productsList.addEventListener('click', e => {
             allProducts = [...allProducts, infoProduct];
         }
 
+        saveCartToLocalStorage(); // Guardar en localStorage
         showHTML();
     }
 });
@@ -58,13 +53,16 @@ rowProduct.addEventListener('click', e => {
         const product = e.target.parentElement;
         const title = product.querySelector('.titulo-producto-carrito').textContent;
 
-        allProducts = allProducts.filter(
-            item => item.title !== title
-        );
-
+        allProducts = allProducts.filter(item => item.title !== title);
+        saveCartToLocalStorage(); // Guardar en localStorage
         showHTML();
     }
 });
+
+// Función para guardar el carrito en localStorage
+const saveCartToLocalStorage = () => {
+    localStorage.setItem('cart', JSON.stringify(allProducts));
+};
 
 // Función para mostrar HTML
 const showHTML = () => {
@@ -112,3 +110,6 @@ const showHTML = () => {
     valorTotal.innerText = `$${total.toFixed(0)}`; // Formato a dos decimales
     countProducts.innerText = totalOfProducts; // Mostrar la cantidad total de productos
 };
+
+// Mostrar el carrito al cargar la página
+showHTML(); 

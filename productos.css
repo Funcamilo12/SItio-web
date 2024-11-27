@@ -200,7 +200,11 @@ header {
 }
 
 
-
+footer {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+}
 
 @media (max-width: 858px) {
     body{

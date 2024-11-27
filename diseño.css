@@ -206,6 +206,8 @@ li a.active, li a:hover {
 .footer {  
     position: absolute;
     bottom: 5%;
+    margin: 0 auto;
+    padding: 20px 0; 
 }
 
 

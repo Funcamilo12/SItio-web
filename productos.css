@@ -188,11 +188,7 @@ header {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    body{
-        height: 100vh;
-    }
-}
+
 
 @media (max-width: 858px) {
     body{

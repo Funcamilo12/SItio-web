@@ -197,6 +197,9 @@ header {
 }
 
 @media (max-width: 952px) {
+    body{
+        max-height: 100vh;
+    }
 
 }
 

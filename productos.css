@@ -133,9 +133,6 @@ header {
     display: none;
 }
 
-
-
-
 /*principal*/
 
 .container-items {
@@ -189,4 +186,25 @@ header {
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 858px) {
+
+}
+
+@media (max-width: 952px) {
+
+   
+}
+
+@media (max-width: 2000px) {
+    .body{
+        min-height: 100vh;
+        min-width: 80vw;
+    }
+
 }

@@ -189,11 +189,15 @@ header {
 }
 
 @media (max-width: 768px) {
- 
+    body{
+        height: 100vh;
+    }
 }
 
 @media (max-width: 858px) {
-
+    body{
+        height: 100vh;
+    }
 }
 
 @media (max-width: 952px) {
@@ -206,9 +210,12 @@ header {
 }
 
 @media (max-width: 2000px) {
-    .body{
+    body{
         min-height: 100vh;
         min-width: 80vw;
+    }
+    body{
+        height: 100vh;
     }
 
 }

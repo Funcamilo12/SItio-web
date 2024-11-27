@@ -203,13 +203,3 @@ header {
    
 }
 
-@media (max-width: 2000px) {
-    body{
-        min-height: 100vh;
-        min-width: 80vw;
-    }
-    body{
-        height: 100vh;
-    }
-
-}

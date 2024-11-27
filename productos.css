@@ -202,4 +202,8 @@ header {
     }
 
 }
-
+@media (max-width: 2000px) {
+    body{
+        max-height: 100%;
+    }
+}

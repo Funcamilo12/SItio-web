@@ -208,10 +208,6 @@ li a.active, li a:hover {
     bottom: 5%;
 }
 
-.politica-privacidad a {
-    text-decoration: none;
-    color: black;
-}
 
 @media (max-width: 768px) {
     .slider-wrapper{

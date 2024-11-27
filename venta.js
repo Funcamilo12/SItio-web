@@ -107,7 +107,7 @@ const showHTML = () => {
     });
 
     // Mostrar el total en el formato correcto
-    valorTotal.innerText = `$${total.toFixed(0)}`; // Formato a dos decimales
+    valorTotal.innerText = `$${total.toFixed(0)}`;
     countProducts.innerText = totalOfProducts; // Mostrar la cantidad total de productos
 };
 

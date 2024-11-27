@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseño.css">
+	<link rel="stylesheet" href="productos.css">
+	<script src="https://kit.fontawesome.com/20fdd0499d.js" crossorigin="anonymous"></script>
+    <title>comprar</title>
+</head>
+<body>
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fa-solid fa-bars"></i>
+			</label>
+			<a href="index.html" class="enlace">
+				<img src="Imagenes\logo.jpg" alt="logo" class="logo">
+			</a>
+			<ul>
+				<li><a class="active" href="index.html">Inicio</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="oferta.html">Ofertas</a></li>
+				<li><a href="contactanos.html">Contactanos</a></li>
+			</ul>
+		</nav>
+        <header>
+            <h1>Tienda</h1>
+						<div class="container-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+							</svg>
+							<div class="count-products">
+								<spam id="contador-productos">0</spam>
+							</div>
+							
+							<div class="container-carts-products hidden-cart">
+								<div class="cart-product">
+									<div class="info-cart-product">
+										<span class="cantidad-producto-carrito">1</span>
+										<p class="titulo-producto-carrito">Anillos en cuadros</p>
+										<span class="precio-producto-carrito">$10.000</span>
+									</div>
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+									  </svg>
+									  
+								</div>
+								<div class="cart-total">
+									<h3>Total:</h3>
+									<span class="total-pagar">$10.000</span>
+								</div>
+							</div> 
+						</div>
+        </header>
+				<div class="container-items">
+					<div class="item-vender">
+						<figure>
+							<img src="Imagenes/Collar1.jpg" alt="product">
+						</figure>
+						<div class="info-producto">
+							<h2 class="nombre-producto">Anillos en cuadros</h2>
+							<p class="precio">$10.000</p>
+							<button>Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item-vender">
+						<figure>
+							<img src="Imagenes/Manilla5.jpeg" alt="anillo">
+						</figure>
+						<div class="info-producto">
+							<h2 class="nombre-producto">Anillos en rayas</h2>
+							<p class="precio">$5.000</p>
+							<button>Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item-vender">
+						<figure>
+							<img src="Imagenes/Manilla2.jpg" alt="product">
+						</figure>
+						<div class="info-producto">
+							<h2 class="nombre-producto">Anillos en resortes</h2>
+							<p class="precio">$15.000</p>
+							<button>Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item-vender">
+						<figure>
+							<img src="Imagenes/Manilla3.jpg" alt="product">
+						</figure>
+						<div class="info-producto">
+							<h2 class="nombre-producto">Anillos en lana</h2>
+							<p class="precio">$100</p>
+							<button>Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+        
+
+</body>
+</html>

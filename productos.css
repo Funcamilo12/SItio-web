@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background: rgb(255,246,174) no-repeat center;
+    background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center;
+    margin: 0 auto;
+    max-width: 100%;
+    color: #333;
+
+}
+
+.icon-cart {
+    width: 40px;
+    height: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 40px 0;
+    width: 100%;
+}
+
+
+
+
+
+/*principal*/
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-vender {
+    border-radius: 10px;
+}
+
+.item-vender:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item-vender img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    transition: all .7s;
+    /* opcional a ver*/
+    /* object-fit: cover; */
+}
+
+.item-vender figure {
+    overflow: hidden;
+}
+
+.item-vender:hover img{
+    transform: scale(1.2);
+}
+
+.info-producto {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-producto button {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}

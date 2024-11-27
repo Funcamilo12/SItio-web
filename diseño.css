@@ -202,12 +202,12 @@ li a.active, li a:hover {
     padding: 15px;
 
 }
+
 .footer {  
     position: absolute;
     bottom: 5%;
+}
 
-
- }
 @media (max-width: 768px) {
     .slider-wrapper{
         margin: 0 10px 40px;

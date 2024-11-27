@@ -192,13 +192,13 @@ header {
 
 @media (max-width: 858px) {
     body{
-        height: 100vh;
+        max-height: 100%;
     }
 }
 
 @media (max-width: 952px) {
     body{
-        max-height: 100vh;
+        max-height: 100%;
     }
 
 }

@@ -142,28 +142,28 @@ header {
     margin: 0 20px;
 }
 
-.item-vender {
+.item{
     border-radius: 10px;
 }
 
-.item-vender:hover {
+.item:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.item-vender img {
+.item img {
     width: 100%;
     height: 250px;
+    /*object-fit: cover;*/ 
     border-radius: 10px 10px 0 0;
     transition: all .7s;
-    /* opcional a ver*/
-    /* object-fit: cover; */
+    
 }
 
-.item-vender figure {
+.item figure {
     overflow: hidden;
 }
 
-.item-vender:hover img{
+.item:hover img{
     transform: scale(1.2);
 }
 
@@ -175,7 +175,7 @@ header {
     gap: 10px;
 }
 
-.precio {
+.price {
     font-size: 18px;
     font-weight: 900;
 }
@@ -188,6 +188,17 @@ header {
     padding: 15px 10px;
     cursor: pointer;
 }
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hidden{
+    display: none;
+}
+
 
 
 

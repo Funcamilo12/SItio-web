@@ -50,6 +50,9 @@
     .video-contactanos {
         margin-top: 20px; /* Espacio entre textos y iframe */
     }
+    .body-contactanos {
+        height: 100vh;
+    }
 }
 
 @media(max-width:1200px) {

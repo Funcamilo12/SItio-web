@@ -62,13 +62,16 @@ footer {
 
 @media(max-width:810px) {
     .video-contactanos iframe {
-        position: absolute;
         display: flex;
+        max-width: 250px;
         align-items: center;
         justify-content: center;
         padding: 0 20px 0 10px;
         height: 300px;
-        width: 220px;
+       
+    }
+    .contactos redes iframe {
+        display: flex;
     }
     .body-contactanos {
         width: 100%;

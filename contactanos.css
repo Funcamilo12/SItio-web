@@ -99,3 +99,10 @@ footer {
         min-height: 100vh;
     }
 }
+
+@media(max-width:2150px) {
+    
+    .body-contactanos {
+        min-height: 100vh;
+    }
+}

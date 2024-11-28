@@ -8,11 +8,10 @@
 }
 
 .body-contactanos {
-    background: rgb(255,246,174) no-repeat center;
-    background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center center;
+    background: rgb(255,246,174) center no-repeat;
+    background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) center no-repeat;
     width: 100%;
     height: 100vh;
-
 }
 
 .contenido-contactanos {
@@ -23,59 +22,55 @@
 
 .contactanos {
     position: absolute;
-}
-.video-contactanos iframe {
-    position: absolute;
-    top: 90px;
-    left: 600px;
-    width: 400px;
-    height: 300px;
-    aspect-ratio: 16/9;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
 }
 
-.video-contactanos {
-    max-width: 30rem;
-    margin: auto;
-}
 .redes {
     font-size: 25px;
     font-weight: bold;
     color: rgb(0, 0, 0);
     margin: 0px 0 40px 0px;
 }
+
 h4 {
-    padding: 20px 0 20px 0;
-
+    padding: 20px 0;
 }
 
-i {
-    cursor: default;
+.video-contactanos {
+    max-width: 30rem;
+    margin: auto;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4px 15px 15px 0;
+/* Estilos para el iframe */
+.video-contactanos iframe {
+    width: 100%; /* Hacer que el iframe ocupe el 100% del contenedor */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    aspect-ratio: 16 / 9; /* Mantener la relación de aspecto */
 }
 
+/* Media query para pantallas menores a 810px */
+@media (max-width: 810px) {
+    .video-contactanos {
+        margin-top: 20px; /* Espaciado superior para el iframe */
+    }
+}
+/* Media Query para pantallas de 810px o menos */
+@media (max-width: 810px) {
+    .contactanos {
+        position: relative; /* Cambiado a relative para que el video se coloque debajo del texto */
+        padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+    }
 
-@media(max-width:810px) {
+    .video-contactanos {
+        margin-top: 20px; /* Espacio entre el texto y el video */
+    }
+
     .video-contactanos iframe {
-        display: flex;
-        max-width: 250px;
-        align-items: center;
-        justify-content: center;
-        padding: 0 20px 0 10px;
-        height: 300px;
-       
-    }
-    .contactos redes iframe {
-        display: flex;
-    }
-    .body-contactanos {
-        width: 100%;
-        min-height: 100vh;
+        position: relative; /* Cambiado a relative para que se ajuste correctamente */
+        top: 0; /* Se elimina el top fijo */
+        left: 0; /* Se elimina el left fijo */
+        width: 100%; /* El iframe ocupará el 100% de su contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
     }
 }
 

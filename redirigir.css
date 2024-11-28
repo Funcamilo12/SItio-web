@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.body-redirigir {
+    overflow: hidden;
+}
+
+.section-redirigir {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #9b1818; 
+}
+
+.mini-formulario {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; 
+}
+
+.botones {
+    cursor: pointer;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.boton-crear{
+    font-weight: 800;
+    padding: 10px;
+    width: 250px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: #1900ff;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: none;
+}
+.boton-crear:hover {
+    transition: all .5s;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #daff08;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.boton-ingresar:hover {
+    transition: all .5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #daff08;
+    color: rgb(0, 0, 0);
+}
+.boton-ingresar {
+    font-weight: 800;
+    padding: 10px;
+    width: 250px;
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #b0c9a1;
+    color: rgb(40, 70, 202);
+    border-radius: 6px;
+    border: none;
+}

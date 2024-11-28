@@ -12,7 +12,6 @@ body {
     margin: 0 auto;
     max-width: 100%;
     color: #333;
-
 }
 
 .icon-cart {
@@ -64,7 +63,7 @@ header {
     position: absolute;
     top: 50px;
     right: 0;
-
+    
     background-color: #fff;
     width: 400px;
     z-index: 1;
@@ -198,7 +197,6 @@ header {
 .hidden{
     display: none;
 }
-
 
 footer {
     position: absolute;

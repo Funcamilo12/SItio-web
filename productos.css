@@ -109,6 +109,28 @@ header {
     gap: 20px;
 }
 
+.realizar-compra {
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    height: 40px;
+    width: 350px;
+    border: 1px solid #b9a3a3;
+    padding: 10px 0 10px 0;
+}
+
+.realizar-compra:hover {
+    background-color: aquamarine;
+
+}
+
 .cart-total h3 {
     font-size: 20px;
     font-weight: 700;

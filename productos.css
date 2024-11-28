@@ -111,19 +111,15 @@ header {
 
 .realizar-compra {
     border-radius: 10px;
-    background-color: #fff;
-    display: flex;
+ 
     text-decoration: none;
     color: #000;
     font-size: 20px;
     font-weight: 900;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    height: 40px;
+    height: 60px;
     width: 350px;
     border: 1px solid #b9a3a3;
-    padding: 10px 0 10px 0;
+    padding: 5px 150px 5px 150px;
 }
 
 .realizar-compra:hover {

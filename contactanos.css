@@ -55,7 +55,19 @@ footer {
 .footer-content p {
     margin-bottom: 10px; /* Espacio entre el texto y el botón */
 }
+#localizacion {
+    background: rgb(255, 246, 174); /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto */
+    border: none; /* Eliminar bordes */
+    padding: 5px 10px; /* Espacio interno */
+    border-radius: 5px; /* Radio de bordes */
+    cursor: pointer;
+}
 
+#localizacion:hover {
+    background: rgba(255,255,255,0.8); /* Color de fondo al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
 
 
 /* Estilos para dispositivos móviles */

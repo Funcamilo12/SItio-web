@@ -65,6 +65,8 @@ footer {
     .video-contactanos iframe {
         left: 200px;
         top: 20px;
+        height: 100px;
+        width: 150px;
     }
     .body-contactanos {
         width: 100%;

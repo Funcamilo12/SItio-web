@@ -68,7 +68,10 @@ footer {
     background: rgba(255,255,255,0.8); /* Color de fondo al pasar el ratón */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
 }
-
+.redes a {
+    text-decoration: none;
+    color: #000;
+ }
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {

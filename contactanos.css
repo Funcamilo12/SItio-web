@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.body-contactanos {
+    background: rgb(255,246,174);
+    background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.contenido-contactanos {
+    width: 100%;
+    height: calc(100vh - 141px);
+    position: relative;
+}
+
+.contactanos {
+    position: absolute;
+}
+.video-contactanos {
+    position: absolute;
+    top: 90px;
+    left: 640px;
+}
+.redes {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 90px 0 40px 40px;
+
+}
+h4 {
+    padding: 20px 5px 20px 0;
+
+}
+
+i {
+    cursor: default;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 15px 15px 10px;
+}

@@ -188,6 +188,13 @@ header {
     cursor: pointer;
 }
 
+.info-producto button:hover {
+    background-color: rgba(255, 0, 0, 0.20);
+    border-radius: 5px;
+    color: #000;
+    transition: all .5s;
+}
+
 .cart-empty{
     padding: 20px;
     text-align: center;

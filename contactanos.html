@@ -40,30 +40,31 @@
 			</div>
 
 		</section>
-			<footer>
+		<footer>
+			<div class="footer-content">
 				<p>© 2024-Nahiara</p>
-
+				<button id="localizacion">localizacion</button>
+			</div>
 			<section>
 				<script>
-				  window.onload=function(){
-					var botonLocalizacion=document.getElementById('localizacion');
-					botonLocalizacion.addEventListener('click', obtenerUbicacion);
-				  };
-				  function obtenerUbicacion(){
-					if ('geolocation' in navigator) {
-					  navigator.geolocation.getCurrentPosition(function(position) {console.log("Tu ubicacion es: ",position.coords.latitude, position.coords.longitude);
-					}, function(error){
-					  console.error("Error al obtener ubicación: ",error);
-					  });
-					} else {
-					  console.log("Geolocalizacion no es compatible en este navegador.");
+					window.onload = function () {
+						var botonLocalizacion = document.getElementById('localizacion');
+						botonLocalizacion.addEventListener('click', obtenerUbicacion);
+					};
+					function obtenerUbicacion() {
+						if ('geolocation' in navigator) {
+							navigator.geolocation.getCurrentPosition(function (position) {
+								console.log("Tu ubicacion es: ", position.coords.latitude, position.coords.longitude);
+							}, function (error) {
+								console.error("Error al obtener ubicación: ", error);
+							});
+						} else {
+							console.log("Geolocalizacion no es compatible en este navegador.");
+						}
 					}
-				  }
 				</script>
-				<button id="localizacion">localizacion</button>
-	
-			</footer>
-		</section>
+			</section>
+		</footer>
 
 
 </body>

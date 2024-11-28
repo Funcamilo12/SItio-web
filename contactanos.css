@@ -27,8 +27,10 @@
 .video-contactanos iframe {
     position: absolute;
     top: 90px;
-    left: 640px;
+    left: 600px;
     width: 100%;
+    width: 400px;
+    height: 300px;
     aspect-ratio: 16/9;
 }
 
@@ -56,4 +58,30 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 4px 15px 15px 0;
+}
+
+
+@media(max-width:810px) {
+    .video-contactanos iframe {
+        left: 200px;
+        top: 20px;
+    }
+    .body-contactanos {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media(max-width:1200px) {
+    .video-contactanos iframe {
+        left: 500px;
+        top: 20px;
+    }
+}
+
+@media(max-width:920px) {
+    .video-contactanos iframe {
+        left: 400px;
+        top: 20px;
+    }
 }

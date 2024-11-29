@@ -180,6 +180,7 @@ li a.active, li a:hover {
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    
 }
 .lista .prod {
     list-style: none;
@@ -187,6 +188,7 @@ li a.active, li a:hover {
     margin: 10px;
     display: inline-block;
     border: 1px solid #000;
+    border-radius: 15px;
 }
 .lista {
     width: 100%;
@@ -198,9 +200,9 @@ li a.active, li a:hover {
 
 }
 .lista .prod a:hover {
-    background: #daff08;
-    padding: 15px;
-
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    
 }
 
 .footer {  
@@ -210,6 +212,17 @@ li a.active, li a:hover {
     padding: 20px 0; 
 }
 
+#logout {
+    cursor: pointer;
+    background-color: #003DFF;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    margin-top: 1.5em;
+    font-size: 1em;
+    margin-left: 5px;
+}
 
 @media (max-width: 768px) {
     .slider-wrapper{

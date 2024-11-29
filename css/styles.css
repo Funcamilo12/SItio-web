@@ -5,7 +5,10 @@
 }
 
 body{
-    font-family: var(--font-mono);
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(255,246,174) no-repeat center;
+    background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,170,248,1) 100%) no-repeat center;
+   
 }
 
 section{
@@ -51,15 +54,13 @@ section form input{
     border-radius: 9px;
     border: none;
     outline-color: #003DFF;
-    background-color: #eee;
+    background-color: #ebcaca;
 }
 
 section form input[type='submit']{
     margin-top: 1.5em;
     background-color: #003DFF;
     color: #fff;
-    font-family: var(--font-mono);
-    transition: var(--transition);
 } 
 
 section form input[type='submit']:active{
@@ -79,14 +80,11 @@ section p a{
 
 /* Home */
 
-section button{
-    background-color: #003DFF;
-    color: #fff;
-    font-family: var(--font-mono);
-    transition: var(--transition);
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 9px;
-    margin-top: 1.5em;
-    font-size: 1em;
+
+
+
+input::placeholder {
+    background: #ebcaca;
+    height: 100%;
+    width: 100%;
 }

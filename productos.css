@@ -233,11 +233,6 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 408px) {
-    body{
-        max-height: 100%;
-    }
-}
 
 @media (max-width: 858px) {
     body{
